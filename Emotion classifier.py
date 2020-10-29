@@ -61,7 +61,7 @@ for i in file[1:]:
     
 print(f)
 t.close()
-result=open(r"C:\Users\barot\OneDrive\Desktop\Python\Emotion classifier project\resulting_data1.csv","w")            
+result=open(r"resulting_data1.csv","w")            
 result.write('No. of re-tweets,No. of repies,positive repies, negative replies,net score \n')
 b=0
 for i in f:
@@ -70,9 +70,6 @@ for i in f:
     b=b+1
     if b%5 ==0:
         result.write('\n')
-
-
-    
 
 
 result.close()
